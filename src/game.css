@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+  display: flex;
+  background-color: midnightblue;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+#title {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  animation: rainbow 0.23s infinite alternate; /* Animation de dégradé de couleur pendant 5 secondes, en boucle, avec un mouvement aller-retour */
+}
+
+canvas {
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  background: url(https://c4.wallpaperflare.com/wallpaper/783/303/815/vaporwave-synthwave-retrowave-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 17px 1px cyan;
+}
+
+audio {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  margin: 1rem;
+}
+
+/* Exemple de style pour les contrôles du lecteur audio */
+audio::-webkit-media-controls-panel {
+  background-color: palevioletred; /* Fond des contrôles */
+  border-radius: 50px;
+}
+
+/* Exemple de style pour les boutons de contrôle du lecteur audio */
+audio::-webkit-media-controls-play-button {
+  /* styles du bouton play */
+}
+
+audio::-webkit-media-controls-pause-button {
+  /* styles du bouton pause */
+}
+
+.header {
+  display: flex;
+}
+
+.commands {
+  display: flex;
+}
+
+.commands ul {
+  color: white;
+}
+
+/* Animation de dégradé de couleur */
+@keyframes rainbow {
+  0% {
+    color: #ff77a9; /* Rose clair */
+  }
+  100% {
+    color: #d3266e; /* Rose foncé */
+  }
+}
