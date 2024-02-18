@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/game.html --port 8080",
     "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/game.html --out-dir ./dist/",
+    "deploy": "yarn install && yarn build && yarn start",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
   },
   "repository": {
